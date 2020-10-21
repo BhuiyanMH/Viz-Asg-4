@@ -2,7 +2,7 @@ import pandas as pd
 import streamlit as st
 import altair as alt
 
-df = pd.read_csv('gender_with_continent.csv', index_col = False)
+df = pd.read_csv('https://github.com/BhuiyanMH/Viz-Asg-4/blob/main/gender_with_continent.csv?raw=true', index_col = False)
 df_recent = df[(df['Year'] >= 2000)&(df['Year'] < 2017)]
 df_2016 = df_recent[df_recent.Year == 2016]
 df_2016_unemployment = df_2016[['Continent', 'Country Name', 'Unemployment, youth female (% of female labor force ages 15-24) (modeled ILO estimate)', 'Unemployment, youth male (% of male labor force ages 15-24) (modeled ILO estimate)']]

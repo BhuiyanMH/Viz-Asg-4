@@ -4,7 +4,7 @@ pd.set_option('display.max_rows', None)
 pd.set_option('display.max_columns', None)
 
 #read the data frame
-df = pd.read_csv('gender.csv')
+df = pd.read_csv('https://github.com/BhuiyanMH/Viz-Asg-4/blob/main/gender.csv?raw=true', index_col=False)
 
 def get_continent(country_code):
     '''

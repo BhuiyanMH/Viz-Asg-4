@@ -3,7 +3,7 @@ import streamlit as st
 import altair as alt
 
 #load gender data with the continent column
-gender_data = pd.read_csv('gender_with_continent.csv')
+gender_data = pd.read_csv('https://github.com/BhuiyanMH/Viz-Asg-4/blob/main/gender_with_continent.csv?raw=true', index_col = False)
 
 chart = alt.Chart(gender_data).mark_line().encode(
     alt.X('Year:O'),
@@ -29,4 +29,4 @@ chart = alt.Chart(gender_data).mark_line().encode(
     dx=24
 )
 st.write(chart)
-chart.save('BHUIYAN-Gender-P1.png')
+#chart.save('BHUIYAN-Gender-P1.png')
